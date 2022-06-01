@@ -6,7 +6,7 @@ namespace laba22
     {
         StepEnemy stepEnemy = new StepEnemy();
         Counter counter = new Counter();
-        CounterEnemy counterEnemy = new CounterEnemy();
+        
 
         public Game(Gamer gamer, Gamer enemy)
         {
@@ -17,7 +17,7 @@ namespace laba22
             for (int i = 0; i < 5; i++)
             {
                 counter.Method(gamer.kosti[i]);
-                counterEnemy.Method(gamer.kosti[i]);
+                counter.Method(gamer.kosti[i]);
             }
 
             Console.WriteLine("Пожалуйста сделайте вашу ставку");
@@ -56,12 +56,12 @@ namespace laba22
                     Console.WriteLine(counter.counterFive + " кость(ей) с номиналом 5");
                     Console.WriteLine(counter.counterSix + " кость(ей) с номиналом 6");
                     Console.WriteLine();
-                    Console.WriteLine(counterEnemy.counterOne + " кость(ей) с номиналом 1");
-                    Console.WriteLine(counterEnemy.counterTwo + " кость(ей) с номиналом 2");
-                    Console.WriteLine(counterEnemy.counterThree + " кость(ей) с номиналом 3");
-                    Console.WriteLine(counterEnemy.counterFour + " кость(ей) с номиналом 4");
-                    Console.WriteLine(counterEnemy.counterFive + " кость(ей) с номиналом 5");
-                    Console.WriteLine(counterEnemy.counterSix + " кость(ей) с номиналом 6");
+                    Console.WriteLine(counter.counterOne + " кость(ей) с номиналом 1");
+                    Console.WriteLine(counter.counterTwo + " кость(ей) с номиналом 2");
+                    Console.WriteLine(counter.counterThree + " кость(ей) с номиналом 3");
+                    Console.WriteLine(counter.counterFour + " кость(ей) с номиналом 4");
+                    Console.WriteLine(counter.counterFive + " кость(ей) с номиналом 5");
+                    Console.WriteLine(counter.counterSix + " кость(ей) с номиналом 6");
                 }
                 if (TrueFalseEnd == 3)
                 {
