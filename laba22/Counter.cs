@@ -12,7 +12,7 @@ namespace laba22
             counterFourGamer = 0, counterFiveGamer = 0, counterSixGamer = 0;
         public void Method(int _value)
         {
-           //Счетчик костей игрока
+            //Счетчик костей игрока
             switch (_value)
             {
                 case 1:
@@ -63,5 +63,11 @@ namespace laba22
                     break;
             }
         }
+        //public int counterResultAllOne = counterOneGamer + counterOneEnemy;
+        //public int counterResultAllTwo = counterTwoGamer + counterTwoEnemy;
+        //public int counterResultAllThree = counterThreeGamer + counterThreeEnemy;
+        //public int counterResultAllFour = counterFourGamer + counterFourEnemy;
+        //public int counterResultAllFive = counterFiveGamer + counterFiveEnemy;
+        //public int counterResultAllSix = counterSixGamer + counterSixEnemy;
     }
 }

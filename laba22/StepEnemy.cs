@@ -16,5 +16,6 @@ namespace laba22
 
             return $"Ставка соперника {kolvokosteyEnemy} кости(ей) с номиналом {nominalEnemy}";
         }
+        
     }
 }

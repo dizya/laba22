@@ -26,11 +26,11 @@ namespace laba22
             Console.WriteLine($"Ваша ставка {kolvokosteyGamer} кости с номиналом {nominalGamer}");
 
             Console.WriteLine(stepEnemy.Step());//ставка соперника
-
+            
             while (true)
             {
-                Console.WriteLine("Выберите \"1\" если верите и \"2\" если не верите " +
-                    "или напишите \" 3\" если хотите закончить игру");
+                Console.WriteLine("Выбирайте \"1\" если верите и \"2\" если не верите " +
+                    "или нажмите любую другую кнопку, если хотите закончить игру");
                 int TrueFalseEnd = Convert.ToInt32(Console.ReadLine());//выбор действия(верить/не верить или закончить игру)
 
                 if (TrueFalseEnd == 1)
@@ -39,7 +39,9 @@ namespace laba22
                     int kolvokostey2 = Convert.ToInt32(Console.ReadLine());
                     Console.Write("Введите номинал костей : ");
                     int nominal2 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"Ваша ставка {kolvokostey2} кости с номиналом {nominal2}");
+                    kolvokosteyGamer = kolvokostey2;
+                    nominalGamer = nominal2;
+                    Console.WriteLine($"Ваша ставка {kolvokosteyGamer} кости с номиналом {nominalGamer}");
                     Console.WriteLine(stepEnemy.Step()); //ставка соперника
                 }
                 if (TrueFalseEnd == 2)
@@ -60,11 +62,10 @@ namespace laba22
                     Console.WriteLine(counter.counterFourEnemy + " кость(ей) с номиналом 4");
                     Console.WriteLine(counter.counterFiveEnemy + " кость(ей) с номиналом 5");
                     Console.WriteLine(counter.counterSixEnemy + " кость(ей) с номиналом 6");
-
-                    if (TrueFalseEnd == 3)
-                    {
-                        break;
-                    }
+                }
+                else
+                {
+                    Environment.Exit(0);
                 }
 
             }
