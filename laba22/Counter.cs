@@ -35,12 +35,12 @@ namespace laba22
                     break;
             }
         }
-        
-        public int counterOneEnemy = 0, counterTwoEnemy = 0, counterThreeEnemy = 0, 
+
+        public int counterOneEnemy = 0, counterTwoEnemy = 0, counterThreeEnemy = 0,
             counterFourEnemy = 0, counterFiveEnemy = 0, counterSixEnemy = 0;
         public void MethodEnemy(int value)
         {
-            //Счетчик костей соперника
+            //Счетчик костей игрока
             switch (value)
             {
                 case 1:

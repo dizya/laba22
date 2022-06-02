@@ -10,10 +10,12 @@ namespace laba22
         {
             string gamerKosti = gamer.Peremeshivanie();
             Console.WriteLine("Ваши кости: " + gamerKosti);//вывод ваших костей
-            string enemyKosti = gamer.Peremeshivanie();
+            string enemyKosti = enemy.Peremeshivanie();
 
             for (int i = 0; i < 5; i++)
             {
+                counter.Method(gamer.kosti[i]);
+                counter.MethodEnemy(enemy.kosti[i]);
             }
 
             Console.WriteLine("Пожалуйста сделайте вашу ставку");
@@ -57,13 +59,14 @@ namespace laba22
                     Console.WriteLine(counter.counterFourEnemy + " кость(ей) с номиналом 4");
                     Console.WriteLine(counter.counterFiveEnemy + " кость(ей) с номиналом 5");
                     Console.WriteLine(counter.counterSixEnemy + " кость(ей) с номиналом 6");
-                }
-                if (TrueFalseEnd == 3)
-                {
-                    break;
-                }
-            }
 
+                    if (TrueFalseEnd == 3)
+                    {
+                        break;
+                    }
+                }
+
+            }
         }
     }
 }
