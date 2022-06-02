@@ -9,12 +9,12 @@ namespace laba22
     public class StepEnemy
     {
         Random rndEnemy = new Random();
-        public void Step()
+        public string Step()
         {
             int kolvokosteyEnemy = rndEnemy.Next(1, 6);
             int nominalEnemy = rndEnemy.Next(1, 7);
 
-            Console.WriteLine($"Ставка врага {kolvokosteyEnemy} кости(ей) с номиналом {nominalEnemy}");
+            return $"Ставка соперника {kolvokosteyEnemy} кости(ей) с номиналом {nominalEnemy}";
         }
     }
 }

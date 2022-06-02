@@ -4,8 +4,8 @@ namespace laba22
 {
     public class Game
     {
-        StepEnemy stepEnemy = new StepEnemy();
         Counter counter = new Counter();
+        StepEnemy stepEnemy = new StepEnemy();
         public Game(Gamer gamer, Gamer enemy)
         {
             string gamerKosti = gamer.Peremeshivanie();
@@ -24,7 +24,8 @@ namespace laba22
             Console.Write("Введите номинал костей : ");
             int nominalGamer = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Ваша ставка {kolvokosteyGamer} кости с номиналом {nominalGamer}");
-            stepEnemy.Step(); //ставка соперника
+
+            Console.WriteLine(stepEnemy.Step());//ставка соперника
 
             while (true)
             {
@@ -39,7 +40,7 @@ namespace laba22
                     Console.Write("Введите номинал костей : ");
                     int nominal2 = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine($"Ваша ставка {kolvokostey2} кости с номиналом {nominal2}");
-                    stepEnemy.Step(); //ставка соперника
+                    Console.WriteLine(stepEnemy.Step()); //ставка соперника
                 }
                 if (TrueFalseEnd == 2)
                 {
