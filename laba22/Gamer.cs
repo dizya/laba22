@@ -28,9 +28,4 @@ namespace laba22
             return $"{kosti[0]} {kosti[1]} {kosti[2]} {kosti[3]} {kosti[4]}";
         }
     }
-    public class Enemy : Gamer
-    {
-        Enemy enemy12 = new Enemy();
-        
-    }
 }

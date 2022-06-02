@@ -8,29 +8,58 @@ namespace laba22
 {
     public class Counter
     {
-        public int counterOne = 0, counterTwo = 0, counterThree = 0, counterFour = 0, counterFive = 0, counterSix = 0;
+        public int counterOneGamer = 0, counterTwoGamer = 0, counterThreeGamer = 0,
+            counterFourGamer = 0, counterFiveGamer = 0, counterSixGamer = 0;
         public void Method(int _value)
         {
-           //Счетчик костей
+           //Счетчик костей игрока
             switch (_value)
             {
                 case 1:
-                    counterOne++;
+                    counterOneGamer++;
                     break;
                 case 2:
-                    counterTwo++;
+                    counterTwoGamer++;
                     break;
                 case 3:
-                    counterThree++;
+                    counterThreeGamer++;
                     break;
                 case 4:
-                    counterFour++;
+                    counterFourGamer++;
                     break;
                 case 5:
-                    counterFive++;
+                    counterFiveGamer++;
                     break;
                 case 6:
-                    counterSix++;
+                    counterSixGamer++;
+                    break;
+            }
+        }
+        
+        public int counterOneEnemy = 0, counterTwoEnemy = 0, counterThreeEnemy = 0, 
+            counterFourEnemy = 0, counterFiveEnemy = 0, counterSixEnemy = 0;
+        public void MethodEnemy(int value)
+        {
+            //Счетчик костей соперника
+            switch (value)
+            {
+                case 1:
+                    counterOneEnemy++;
+                    break;
+                case 2:
+                    counterTwoEnemy++;
+                    break;
+                case 3:
+                    counterThreeEnemy++;
+                    break;
+                case 4:
+                    counterFourEnemy++;
+                    break;
+                case 5:
+                    counterFiveEnemy++;
+                    break;
+                case 6:
+                    counterSixEnemy++;
                     break;
             }
         }
