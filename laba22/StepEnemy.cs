@@ -8,14 +8,15 @@ namespace laba22
 {
     public class StepEnemy
     {
-        Random rndEnemy = new Random();
-        public string Step()
+        public Random rndEnemy = new Random();
+        public int kolvolosteyEnemy { get; set; }
+        public int nominalEnemy { get; set; }
+        public void Step()
         {
-            int kolvokosteyEnemy = rndEnemy.Next(1, 6);
-            int nominalEnemy = rndEnemy.Next(1, 7);
-
-            return $"Ставка соперника {kolvokosteyEnemy} кости(ей) с номиналом {nominalEnemy}";
+            kolvolosteyEnemy = rndEnemy.Next(1, 6);
+            nominalEnemy = rndEnemy.Next(1, 7);
+            Console.WriteLine($"Ставка костей соперника {kolvolosteyEnemy}");
+            Console.WriteLine($"Ставка номинала костей соперника {nominalEnemy}");
         }
-        
     }
 }
