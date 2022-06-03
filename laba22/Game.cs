@@ -6,11 +6,8 @@ namespace laba22
     {
         Counter counter = new Counter();
         StepEnemy stepEnemy = new StepEnemy();
-
         public Game(Gamer gamer, Gamer enemy)
         {
-            
-
             string gamerKosti = gamer.Peremeshivanie();
             Console.WriteLine("Ваши кости: " + gamerKosti);//вывод ваших костей
             string enemyKosti = enemy.Peremeshivanie();
@@ -29,7 +26,7 @@ namespace laba22
             Console.WriteLine($"Ваша ставка {kolvokosteyGamer} кости с номиналом {nominalGamer}");
 
             stepEnemy.Step();//ставка соперника
-            
+
             while (true)
             {
                 Console.WriteLine("Выбирайте \"1\" если верите и \"2\" если не верите " +
@@ -67,7 +64,7 @@ namespace laba22
                     Console.WriteLine(five + " кость(ей) с номиналом 5");
                     Console.WriteLine(six + " кость(ей) с номиналом 6");
                 }
-                if(TrueFalseEnd == 3)
+                if (TrueFalseEnd == 3)
                 {
                     Environment.Exit(0);
                 }

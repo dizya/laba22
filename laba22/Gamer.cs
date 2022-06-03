@@ -25,7 +25,7 @@ namespace laba22
             kosti[3] = kost4;
             kosti[4] = kost5;
 
-            return $"{kosti[0]} {kosti[1]} {kosti[2]} {kosti[3]} {kosti[4]}";
+            return $"{kosti[0]} {kosti[1]} {kosti[2]} {kosti[3]} {kosti[4]}"; //выводит вашу ставку
         }
     }
 }
